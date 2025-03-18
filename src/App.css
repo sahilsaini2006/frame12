@@ -208,8 +208,25 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease-in-out;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: width 0.3s ease-in-out;
+  border-top-right-radius:150px ;
+  border-bottom-left-radius:150px ;
+}
+
+.card:hover::after {
+  width: 100%;
 }
 
 .card:hover .content {
@@ -218,7 +235,7 @@ li {
 .card:hover .show_now {
   background-color: #daa520;
   color: white;
-  border: 0px;
+  border: 1px solid #daa520;
 }
 
 .testimony_box {
