@@ -30,6 +30,7 @@ import previous from "../assets/image/png/previous.png";
 import next from "../assets/image/png/next.png";
 import slider from "../assets/image/png/slider_.png"
 
+
 const Section = () => {
   return (
     <>
@@ -56,7 +57,9 @@ const Section = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-7 col-sm-9 col-12 position-relative mt-lg-0 mt-4 pt-3">
-              <img className="w-100" src={table} alt="table img" />
+              <div className="m-auto">
+                <img className="w_100" src={table} alt="table img" />
+              </div>
               <div>
                 <img className="table_flower " src={flower1} alt="flower1" />
               </div>
@@ -67,7 +70,7 @@ const Section = () => {
 
       {/* -------------- ABOUT US --------------- */}
 
-      <section className="mt-lg-5 mt-md-4 mt-3 pt-md-5 pt-4">
+      <section className="mt-lg-5 mt-md-4 mt-sm-5 mt-3 pt-md-5 pt-4 overflow-x-hidden">
         <div className="my_container mt-lg-5 mt-sm-3 mt-0 pt-lg-5 pt-sm-4 pt-2">
           <div className="d-flex align-items-center justify-content-between gap-3 d-none d-sm-flex">
             <img src={small_flower} alt="" />
@@ -104,8 +107,8 @@ const Section = () => {
             </div>
           </div>
 
-          <div className="row align-items-center justify-content-lg-between justify-content-center flex-lg-row flex-column-reverse   mt-lg-4 mt-5 pt-3">
-            <div className="col-lg-8 col-md-10 col-sm-12 col-12 mt-lg-0 mt-sm-4 mt-5">
+          <div className="row align-items-center justify-content-lg-between justify-content-center flex-lg-row flex-column-reverse   mt-lg-4 mt-5 pt-3 pe-0">
+            <div className="col-lg-8 col-12 mt-lg-0 mt-sm-4 mt-5 text-lg-start text-center">
               <div className="">
                 <p className="fs_36 fw-semibold text-black">
                   Customized furniture{" "}
@@ -117,9 +120,9 @@ const Section = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4 col-sm-5 col-6">
+            <div className="col-lg-4 col-md-4 col-sm-5 col-6 pe-0 ">
               <div className="woodden_spon ">
-                <img className="w-100" src={spon} alt="spon" />
+                <img className="w-100 " src={spon} alt="spon" />
               </div>
             </div>
           </div>
@@ -129,35 +132,43 @@ const Section = () => {
       {/* -------------- HOW IT WORKS --------------- */}
       <section className="mt-lg-5 mt-md-4 mt-3 pt-md-5 pt-4">
         <div className="my_container mt-lg-4 mt-3 ">
-            <div className="d-flex align-items-center justify-content-md-between justify-content-center gap-lg-3 gap-2 ">
-            <img className="d-md-block d-none" src={small_flower} alt="small_flower" />
-            <p className="fs_36 fw-bold text-dark d-md-block d-none">How to custom</p>
+          <div className="d-flex align-items-center justify-content-md-between justify-content-center gap-lg-3 gap-2 ">
+            <img
+              className="d-md-block d-none"
+              src={small_flower}
+              alt="small_flower"
+            />
+            <p className="fs_36 fw-bold text-dark d-md-block d-none">
+              How to custom
+            </p>
             <div className="flex-grow-1 border_bottom d-md-block d-none"></div>
-            <p className="fs_72 text_lskyblue fw-bolder d-block">HOW IT WORKS</p>
+            <p className="fs_72 text_lskyblue fw-bolder d-block">
+              HOW IT WORKS
+            </p>
           </div>
           <div className="row align-items-center justify-content-lg-between justify-content-center mt-5 pt-3">
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12 position-relative">
+            <div className="col-lg-3 col-sm-6 col-12 position-relative">
               <div className="d-flex justify-content-center align-items-center flex-column gap-4">
                 <img src={desing} alt="Design" />
                 <p className="fs_24 fw-bold text-black ">Choose Design</p>
                 <img className="count_img" src={one_img} alt="one" />
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-sm-0 mt-4 position-relative">
+            <div className="col-lg-3 col-sm-6 col-12 mt-sm-0 mt-4 position-relative">
               <div className="d-flex justify-content-center align-items-center flex-column gap-4">
                 <img src={measuring} alt="measuring" />
                 <p className="fs_24 fw-bold text-black ">Area measuring</p>
                 <img className="count_img" src={second_img} alt="second" />
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-md-0 mt-4 position-relative">
+            <div className="col-lg-3 col-sm-6 col-12 mt-lg-0 mt-4 position-relative">
               <div className="d-flex justify-content-center align-items-center flex-column gap-4">
                 <img src={budgeting} alt="budgeting" />
                 <p className="fs_24 fw-bold text-black ">Budgeting</p>
                 <img className="count_img" src={third_img} alt="third" />
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12 mt-lg-0 mt-4 position-relative">
+            <div className="col-lg-3 col-sm-6 col-12 mt-lg-0 mt-4 position-relative">
               <div className="d-flex justify-content-center align-items-center flex-column gap-4">
                 <img src={production} alt="production" />
                 <p className="fs_24 fw-bold text-black ">Production</p>
@@ -284,12 +295,12 @@ const Section = () => {
           <div className="row justify-content-lg-between justify-content-center mt-lg-4 mt-sm-3 mt-2 pt-3">
             <div className="col-lg-3 col-sm-6 col-6">
               <div className="text-center">
-                <img src={room_img} alt="room_img"  className="w-100"/>
+                <img src={room_img} alt="room_img" className="w-100" />
               </div>
             </div>
             <div className="col-lg-3 col-sm-6 col-6">
               <div className="text-center">
-                <img src={kitchan_img} alt="kitchan_img" className="w-100"  />
+                <img src={kitchan_img} alt="kitchan_img" className="w-100" />
               </div>
             </div>
             <div className="col-lg-5 col-12 mt-lg-0 mt-4">
@@ -327,7 +338,7 @@ const Section = () => {
               </div>
             </div>
           </div>
-          <div className="text-end mt-4">
+          <div className="text-lg-end text-center mt-4">
             <img src={slider} alt="slider" />
           </div>
         </div>

@@ -12,9 +12,9 @@ const Navbar = () => {
           </div>
 
           <nav>
-            <ul className="d-flex align-items-center gap-5 d-none d-lg-flex">
+            <ul className="d-flex align-items-center gap-xl-5 gap-lg-4 d-none d-lg-flex">
               <li>
-                <Link to="/" className=" link_btn text_gray fs_16 fw-normal">
+                <Link to="/about" className=" link_btn text_gray fs_16 fw-normal">
                   Home
                 </Link>
               </li>

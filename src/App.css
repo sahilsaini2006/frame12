@@ -215,27 +215,22 @@ li {
   content: "";
   position: absolute;
   height: 100%;
-  width: 0%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
-  left: 0;
+  left: 0%;
   z-index: 1;
   transition: width 0.3s ease-in-out;
-  border-top-right-radius:150px ;
-  border-bottom-left-radius:150px ;
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 150px;
 }
-
 .card:hover::after {
-  width: 100%;
+  width: 0%;
+  left: 0;
 }
 
 .card:hover .content {
   opacity: 1;
-}
-.card:hover .show_now {
-  background-color: #daa520;
-  color: white;
-  border: 1px solid #daa520;
 }
 
 .testimony_box {
@@ -294,28 +289,28 @@ input {
 
 @media (max-width: 576px) {
   .fs_12 {
-    font-size: 12px;
+    font-size: 10px;
   }
   .fs_14 {
-    font-size: 13px;
+    font-size: 12px;
   }
   .fs_16 {
-    font-size: 14px;
+    font-size: 13px;
   }
   .fs_18 {
-    font-size: 16px;
+    font-size: 15px;
   }
   .fs_20 {
-    font-size: 18px;
+    font-size: 17x;
   }
   .fs_24 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .fs_36 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .fs_72 {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .lh_70 {
@@ -362,7 +357,7 @@ input {
     position: absolute;
     top: 65%;
     left: -18%;
-    z-index: 1;
+    z-index: -1;
   }
   .woodden_spon {
     transform: translateX(0%);
@@ -398,6 +393,9 @@ input {
     transition: 500ms;
     padding: 5px 10 px;
   }
+  .w_100{
+    width: 90%;
+  }
 }
 @media (min-width: 576px) {
   .fs_12 {
@@ -416,13 +414,13 @@ input {
     font-size: 20px;
   }
   .fs_24 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .fs_36 {
-    font-size: 30px;
+    font-size: 28px;
   }
   .fs_72 {
-    font-size: 50px;
+    font-size: 46px;
   }
   .my_container {
     padding: 0 24px;
@@ -441,7 +439,7 @@ input {
     height: calc(100vh - 80px);
   }
   .study_img {
-    height: 80vh;
+    height: 100vh;
   }
   .pink_div {
     display: none;
@@ -456,7 +454,7 @@ input {
     position: absolute;
     top: 0%;
     left: 0%;
-    z-index: 1;
+    z-index: -1;
   }
   .woodden_spon {
     transform: translateX(0%);
@@ -485,6 +483,9 @@ input {
     left: 17%;
     z-index: -1;
   }
+   .w_100{
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   .fs_12 {
@@ -509,7 +510,7 @@ input {
     font-size: 32px;
   }
   .fs_72 {
-    font-size: 58px;
+    font-size: 54px;
   }
   .my_container {
     padding: 0 24px;
@@ -520,14 +521,14 @@ input {
   .w_79 {
     width: 79%;
   }
-    .footer_width {
+  .footer_width {
     width: 80%;
   }
   .heroMIn {
     height: calc(100vh - 80px);
   }
   .study_img {
-    height: 80vh;
+    height: 100vh;
   }
   .pink_div {
     display: block;
@@ -542,7 +543,7 @@ input {
     position: absolute;
     top: 25%;
     left: 0%;
-    z-index: 1;
+    z-index: -1;
   }
   .woodden_spon {
     transform: translateX(0%);
@@ -630,10 +631,10 @@ input {
     position: absolute;
     top: 65%;
     left: -18%;
-    z-index: 1;
+    z-index: -1;
   }
   .woodden_spon {
-    transform: translateX(56%);
+    transform: translateX(0%);
   }
   .count_img:nth-child(1) {
     position: absolute;
@@ -674,7 +675,7 @@ input {
     height: calc(100vh - 80px);
   }
   .study_img {
-    height: 70vh;
+    height: 100%;
   }
 
   .table_flower {
@@ -687,10 +688,11 @@ input {
     position: absolute;
     top: 65%;
     left: -18%;
-    z-index: 1;
+    z-index: -1;
   }
   .woodden_spon {
     transform: translateX(56%);
+    /* overflow: hidden; */
   }
   .count_img:nth-child(1) {
     position: absolute;
